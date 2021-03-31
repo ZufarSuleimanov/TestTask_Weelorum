@@ -13,9 +13,13 @@
 		9ED76CB92614C31E0025BA51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED76CB72614C31E0025BA51 /* Main.storyboard */; };
 		9ED76CBB2614C3200025BA51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED76CBA2614C3200025BA51 /* Assets.xcassets */; };
 		9ED76CBE2614C3200025BA51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED76CBC2614C3200025BA51 /* LaunchScreen.storyboard */; };
+		9ED76CD72614F1620025BA51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ED76CD62614F1620025BA51 /* GoogleService-Info.plist */; };
+		B4835F4AD29080AA9E3CCBDE /* Pods_TestTask_Weelorum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE420D7983C8B104B009662 /* Pods_TestTask_Weelorum.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F270E561C39A788D1B8CB4B /* Pods-TestTask_Weelorum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTask_Weelorum.debug.xcconfig"; path = "Target Support Files/Pods-TestTask_Weelorum/Pods-TestTask_Weelorum.debug.xcconfig"; sourceTree = "<group>"; };
+		9AE420D7983C8B104B009662 /* Pods_TestTask_Weelorum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTask_Weelorum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED76CAE2614C31E0025BA51 /* TestTask_Weelorum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask_Weelorum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED76CB12614C31E0025BA51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED76CB32614C31E0025BA51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		9ED76CBA2614C3200025BA51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ED76CBD2614C3200025BA51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ED76CBF2614C3200025BA51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED76CD62614F1620025BA51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E87A112C526EA71C97B9648C /* Pods-TestTask_Weelorum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTask_Weelorum.release.xcconfig"; path = "Target Support Files/Pods-TestTask_Weelorum/Pods-TestTask_Weelorum.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4835F4AD29080AA9E3CCBDE /* Pods_TestTask_Weelorum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				9ED76CB02614C31E0025BA51 /* TestTask_Weelorum */,
 				9ED76CAF2614C31E0025BA51 /* Products */,
+				F06B0518955FC738E7CC8602 /* Pods */,
+				E702964592F59ED869D8B6CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +80,7 @@
 				9ED76CB32614C31E0025BA51 /* SceneDelegate.swift */,
 				9ED76CBA2614C3200025BA51 /* Assets.xcassets */,
 				9ED76CBF2614C3200025BA51 /* Info.plist */,
+				9ED76CD62614F1620025BA51 /* GoogleService-Info.plist */,
 			);
 			path = SettingsFiles;
 			sourceTree = "<group>";
@@ -99,6 +109,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E702964592F59ED869D8B6CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AE420D7983C8B104B009662 /* Pods_TestTask_Weelorum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F06B0518955FC738E7CC8602 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F270E561C39A788D1B8CB4B /* Pods-TestTask_Weelorum.debug.xcconfig */,
+				E87A112C526EA71C97B9648C /* Pods-TestTask_Weelorum.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ED76CC22614C3200025BA51 /* Build configuration list for PBXNativeTarget "TestTask_Weelorum" */;
 			buildPhases = (
+				5F962ADBA5E60457A46104CD /* [CP] Check Pods Manifest.lock */,
 				9ED76CAA2614C31E0025BA51 /* Sources */,
 				9ED76CAB2614C31E0025BA51 /* Frameworks */,
 				9ED76CAC2614C31E0025BA51 /* Resources */,
+				3CC16D75B87F629A11A9FE8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,12 +187,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ED76CBE2614C3200025BA51 /* LaunchScreen.storyboard in Resources */,
+				9ED76CD72614F1620025BA51 /* GoogleService-Info.plist in Resources */,
 				9ED76CBB2614C3200025BA51 /* Assets.xcassets in Resources */,
 				9ED76CB92614C31E0025BA51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CC16D75B87F629A11A9FE8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTask_Weelorum/Pods-TestTask_Weelorum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTask_Weelorum/Pods-TestTask_Weelorum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTask_Weelorum/Pods-TestTask_Weelorum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F962ADBA5E60457A46104CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTask_Weelorum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9ED76CAA2614C31E0025BA51 /* Sources */ = {
@@ -315,6 +388,7 @@
 		};
 		9ED76CC32614C3200025BA51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F270E561C39A788D1B8CB4B /* Pods-TestTask_Weelorum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -335,6 +409,7 @@
 		};
 		9ED76CC42614C3200025BA51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87A112C526EA71C97B9648C /* Pods-TestTask_Weelorum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
