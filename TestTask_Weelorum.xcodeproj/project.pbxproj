@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E3A72122615EC6D00B184AF /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A72112615EC6D00B184AF /* AuthHandler.swift */; };
 		9E3AA7942615137E00F652BE /* ScreenObjectAndElementNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3AA7932615137E00F652BE /* ScreenObjectAndElementNames.swift */; };
 		9ED76CB22614C31E0025BA51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB12614C31E0025BA51 /* AppDelegate.swift */; };
 		9ED76CB42614C31E0025BA51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB32614C31E0025BA51 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		3F270E561C39A788D1B8CB4B /* Pods-TestTask_Weelorum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTask_Weelorum.debug.xcconfig"; path = "Target Support Files/Pods-TestTask_Weelorum/Pods-TestTask_Weelorum.debug.xcconfig"; sourceTree = "<group>"; };
 		9AE420D7983C8B104B009662 /* Pods_TestTask_Weelorum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTask_Weelorum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3A72112615EC6D00B184AF /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		9E3AA7932615137E00F652BE /* ScreenObjectAndElementNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenObjectAndElementNames.swift; sourceTree = "<group>"; };
 		9ED76CAE2614C31E0025BA51 /* TestTask_Weelorum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask_Weelorum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED76CB12614C31E0025BA51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		9ED76CC92614C9CD0025BA51 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9E3A72112615EC6D00B184AF /* AuthHandler.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				9E3AA7942615137E00F652BE /* ScreenObjectAndElementNames.swift in Sources */,
 				9ED76CB62614C31E0025BA51 /* AuthorizationViewController.swift in Sources */,
 				9ED76CB22614C31E0025BA51 /* AppDelegate.swift in Sources */,
+				9E3A72122615EC6D00B184AF /* AuthHandler.swift in Sources */,
 				9ED76CB42614C31E0025BA51 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
