@@ -93,8 +93,7 @@
 		9ED76CC82614C9A80025BA51 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9ED76CB72614C31E0025BA51 /* Authorization.storyboard */,
-				9ED76CBC2614C3200025BA51 /* LaunchScreen.storyboard */,
+				9ED76CB52614C31E0025BA51 /* AuthorizationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -110,7 +109,8 @@
 		9ED76CCA2614C9D60025BA51 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9ED76CB52614C31E0025BA51 /* AuthorizationViewController.swift */,
+				9ED76CB72614C31E0025BA51 /* Authorization.storyboard */,
+				9ED76CBC2614C3200025BA51 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
