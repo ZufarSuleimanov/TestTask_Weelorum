@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2eT-3j-Zuk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="7Zx-Xn-dME">
+            <objects>
+                <viewController id="2eT-3j-Zuk" customClass="CatalogViewController" customModule="TestTask_Weelorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RoQ-ig-mAx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1KD-ni-GX6">
+                                <rect key="frame" x="0.0" y="79" width="414" height="783"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UGz-ww-WLf">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JPQ-Tz-94q">
+                                <rect key="frame" x="20" y="44" width="374" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mtu-vZ-Htl"/>
+                        <color key="backgroundColor" red="0.86373662949999996" green="0.66971492769999996" blue="0.27044984700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="1KD-ni-GX6" firstAttribute="top" secondItem="JPQ-Tz-94q" secondAttribute="bottom" constant="4" id="CX3-8t-ePs"/>
+                            <constraint firstItem="1KD-ni-GX6" firstAttribute="leading" secondItem="Mtu-vZ-Htl" secondAttribute="leading" id="EEA-lw-SUJ"/>
+                            <constraint firstItem="1KD-ni-GX6" firstAttribute="bottom" secondItem="Mtu-vZ-Htl" secondAttribute="bottom" id="Rlx-c4-fFB"/>
+                            <constraint firstItem="1KD-ni-GX6" firstAttribute="trailing" secondItem="Mtu-vZ-Htl" secondAttribute="trailing" id="fN2-VD-4k3"/>
+                            <constraint firstItem="JPQ-Tz-94q" firstAttribute="top" secondItem="Mtu-vZ-Htl" secondAttribute="top" id="pWU-dt-9z5"/>
+                            <constraint firstItem="JPQ-Tz-94q" firstAttribute="leading" secondItem="Mtu-vZ-Htl" secondAttribute="leading" constant="20" id="rqR-Rx-Anm"/>
+                            <constraint firstItem="Mtu-vZ-Htl" firstAttribute="trailing" secondItem="JPQ-Tz-94q" secondAttribute="trailing" constant="20" id="zMo-sQ-QJp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="cq5-Dw-ek9"/>
+                    <connections>
+                        <outlet property="itemCollectionView" destination="1KD-ni-GX6" id="Qjw-4m-1p0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4XL-7R-eio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298.55072463768118" y="164.73214285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

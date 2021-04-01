@@ -29,9 +29,10 @@ class AuthorizationViewController: UIViewController {
     }
     
     @IBAction func start(_ sender: UIButton) {
-        guard UserDefaults.standard.string(forKey: "authEmail") != nil else { return }
-        let storyboard = UIStoryboard(name: Storyboards.authorization.rawValue, bundle: nil)
-        let testAuthView = storyboard.instantiateViewController(withIdentifier: ViewControllers.authorization.rawValue)
+//        let checkAuth = AuthHandler.createUser(email: emailTextField.text!, password: passwordTextField.text!)
+//        guard checkAuth else { return }
+        let storyboard = UIStoryboard(name: Storyboards.mainTabBar.rawValue, bundle: nil)
+        let testAuthView = storyboard.instantiateViewController(withIdentifier: ViewControllers.mainTabBar.rawValue)
         testAuthView.modalPresentationStyle = .fullScreen
         present(testAuthView, animated: true)
     }
