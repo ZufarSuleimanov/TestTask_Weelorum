@@ -11,24 +11,32 @@ import FirebaseAuth
 
 class AuthHandler {
     
-    static func loginUser(email: String, password: String) {
+    static var checkAuth = Bool()
+    
+    static func loginUser(email: String, password: String) -> Bool {
         
         Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
             if error == nil {
-                UserDefaults.standard.set(authResult?.user.email, forKey: "authEmail")
+                checkAuth = true
             } else {
-                createUser(email: email, password: password)
+                checkAuth = createUser(email: email, password: password)
             }
         }
+        
+        return checkAuth
     }
     
-    static func createUser(email: String, password: String) {
+    static func createUser(email: String, password: String) -> Bool {
         
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             if error == nil {
-                UserDefaults.standard.set(authResult?.user.email, forKey: "authEmail")
+                checkAuth = true
+            } else {
+                checkAuth = false
             }
         }
+        
+        return checkAuth
     }
     
 }

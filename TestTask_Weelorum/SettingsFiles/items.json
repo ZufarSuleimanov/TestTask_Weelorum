@@ -1,0 +1,92 @@
+[
+    {
+        "name": "iPhone 12 Pro 128GB Gold",
+        "price": 38000,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/f/0/f08b26b4064f92efff805758096263d6.jpg"
+    },
+    {
+        "name": "AirPods Pro",
+        "price": 7899,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/c/b/cb3aebbf033bcdae7541a20803cc8714.jpg"
+    },
+    {
+        "name": "iPhone 12 128GB Blue",
+        "price": 30399,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/b/a/ba97b2f3e3add08c0e13a6a88ad1f5fe.jpg"
+    },
+    {
+        "name": "iPhone 12 256GB White",
+        "price": 33399,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/8/e/8e90d4590a2e6092795cef266ecba090.jpg"
+    },
+    {
+        "name": "iPhone Xr 128Gb Black",
+        "price": 19999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/8/e/8e90d4590a2e6092795cef266ecba090.jpg"
+    },
+    {
+        "name": "iPhone 12 Mini 256GB Blue",
+        "price": 29999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/1/2/127373cc3f04efb510093f2bad27b6bc.jpg"
+    },
+    {
+        "name": "AirPods 2019 with Charging Case",
+        "price": 5299,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/0/1/015d5f1d2dedae0c489753d34bec1296.jpg"
+    },
+    {
+        "name": "iMac 21,5 2020",
+        "price": 38999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/c/b/cbdaad431143f44568207e5863f48acf.jpg"
+    },
+    {
+        "name": "iMac 27 2019",
+        "price": 77999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/2/f/2ff49759d4735de7410a126973915efc.jpg"
+    },
+    {
+        "name": "Pro Display XDR",
+        "price": 181999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/0/7/072322bfb22109bb9454e210294e7e0b.jpg"
+    },
+    {
+        "name": "Mac Pro 256Gb",
+        "price": 209999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/1/6/16e55a70e650ed6e3d53f096eb5dce06.jpg"
+    },
+    {
+        "name": "iPad Pro 11 512Gb Wi-Fi Space Gray 2018",
+        "price": 32999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/2/8/28ff3fd8556e25ebdc505876f6005b73.jpg"
+    },
+    {
+        "name": "Apple Watch Series 6 44mm Blue",
+        "price": 15799,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/f/e/fe1533e97ead42c2b6906e4c47d679c9.png"
+    },
+    {
+        "name": "Apple Watch SE 40mm Siver",
+        "price": 10299,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/1/5/151ba8d2fdfeb12e744ca38d77b68be0.jpg"
+    },
+    {
+        "name": "iPhone 11 Pro 512Gb Midnight Green",
+        "price": 39999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/1/5/1598214127bf0341ad1c95e842a180ab.jpg"
+    },
+    {
+        "name": "MacBook Air M1 Chip 13/256 Silver 2020",
+        "price": 33999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/c/4/c48c6ff2b1a3d5557c91c4192b92cbec.jpg"
+    },
+    {
+        "name": "MacBook Air M1 Chip 13/512 Space Gray",
+        "price": 42999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/9/e/9eab8356d4139e4a28bc31c3631eed96.jpg"
+    },
+    {
+        "name": "MacBook Pro Touch Bar 16 512Gb Space Gray 2019",
+        "price": 82999,
+        "urlImage": "https://i.citrus.ua/imgcache/size_180/uploads/shop/b/7/b71e75703312afde0d6ec13187cc6e7a.jpg"
+    }
+]
