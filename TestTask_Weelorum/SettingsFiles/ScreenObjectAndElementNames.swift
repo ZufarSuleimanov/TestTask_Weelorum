@@ -11,12 +11,14 @@ enum Storyboards: String {
     case authorization = "Authorization"
     case mainTabBar = "MainTabBar"
     case catalog = "Catalog"
+    case addToBasket = "AddToBasket"
 }
 
 enum ViewControllers: String {
     case authorization = "Authorization"
     case mainTabBar = "MainTabBar"
     case catalog = "Catalog"
+    case addToBasket = "AddToBasket"
 }
 
 enum Cells : String {

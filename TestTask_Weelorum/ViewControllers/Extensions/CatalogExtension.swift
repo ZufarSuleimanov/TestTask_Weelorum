@@ -20,7 +20,15 @@ extension CatalogViewController: UICollectionViewDelegate {
 extension CatalogViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        let storyboard = UIStoryboard(name: Storyboards.addToBasket.rawValue, bundle: nil)
+        let addToBasket = storyboard.instantiateViewController(withIdentifier: ViewControllers.addToBasket.rawValue) as! AddToBasketViewController
         
+        addToBasket.name = item.name
+        addToBasket.price = item.price
+        addToBasket.urlImage = item.urlImage
+        
+        show(addToBasket, sender: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

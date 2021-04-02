@@ -19,6 +19,8 @@
 		9E3A725726161EF800B184AF /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E3A725626161EF800B184AF /* items.json */; };
 		9E3AA7942615137E00F652BE /* ScreenObjectAndElementNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3AA7932615137E00F652BE /* ScreenObjectAndElementNames.swift */; };
 		9E4504F52617373000967304 /* CurrentUserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4504F42617373000967304 /* CurrentUserAuth.swift */; };
+		9E4505142617820D00967304 /* AddToBasket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4505132617820D00967304 /* AddToBasket.storyboard */; };
+		9E45051726178D6800967304 /* AddToBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E45051626178D6800967304 /* AddToBasketViewController.swift */; };
 		9ED76CB22614C31E0025BA51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB12614C31E0025BA51 /* AppDelegate.swift */; };
 		9ED76CB42614C31E0025BA51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB32614C31E0025BA51 /* SceneDelegate.swift */; };
 		9ED76CB62614C31E0025BA51 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB52614C31E0025BA51 /* AuthorizationViewController.swift */; };
@@ -44,6 +46,8 @@
 		9E3A725626161EF800B184AF /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 		9E3AA7932615137E00F652BE /* ScreenObjectAndElementNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenObjectAndElementNames.swift; sourceTree = "<group>"; };
 		9E4504F42617373000967304 /* CurrentUserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserAuth.swift; sourceTree = "<group>"; };
+		9E4505132617820D00967304 /* AddToBasket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddToBasket.storyboard; sourceTree = "<group>"; };
+		9E45051626178D6800967304 /* AddToBasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketViewController.swift; sourceTree = "<group>"; };
 		9ED76CAE2614C31E0025BA51 /* TestTask_Weelorum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask_Weelorum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED76CB12614C31E0025BA51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED76CB32614C31E0025BA51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				9E2C8814261658D7001339CB /* CatalogViewController.swift */,
 				9E3A724626161B8500B184AF /* ItemCell.swift */,
 				9ED76CB52614C31E0025BA51 /* AuthorizationViewController.swift */,
+				9E45051626178D6800967304 /* AddToBasketViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				9E3A721E2615FCBA00B184AF /* MainTabBar.storyboard */,
 				9E2C8811261651CB001339CB /* Catalog.storyboard */,
 				9E3A724726161B8500B184AF /* ItemCell.xib */,
+				9E4505132617820D00967304 /* AddToBasket.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			files = (
 				9E2C8812261651CB001339CB /* Catalog.storyboard in Resources */,
 				9ED76CBE2614C3200025BA51 /* LaunchScreen.storyboard in Resources */,
+				9E4505142617820D00967304 /* AddToBasket.storyboard in Resources */,
 				9ED76CD72614F1620025BA51 /* GoogleService-Info.plist in Resources */,
 				9ED76CBB2614C3200025BA51 /* Assets.xcassets in Resources */,
 				9E3A725726161EF800B184AF /* items.json in Resources */,
@@ -304,6 +311,7 @@
 				9E3A725026161E0100B184AF /* LocalHandler.swift in Sources */,
 				9ED76CB62614C31E0025BA51 /* AuthorizationViewController.swift in Sources */,
 				9E3A724C26161BA600B184AF /* ItemModel.swift in Sources */,
+				9E45051726178D6800967304 /* AddToBasketViewController.swift in Sources */,
 				9ED76CB22614C31E0025BA51 /* AppDelegate.swift in Sources */,
 				9E3A72122615EC6D00B184AF /* AuthHandler.swift in Sources */,
 				9E3A724826161B8500B184AF /* ItemCell.swift in Sources */,
