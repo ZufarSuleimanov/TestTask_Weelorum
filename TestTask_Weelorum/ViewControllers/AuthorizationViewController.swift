@@ -29,8 +29,8 @@ class AuthorizationViewController: UIViewController {
     }
     
     @IBAction func start(_ sender: UIButton) {
-//        let checkAuth = AuthHandler.createUser(email: emailTextField.text!, password: passwordTextField.text!)
-//        guard checkAuth else { return }
+        let authCheck = AuthHandler.createUser(email: emailTextField.text!, password: passwordTextField.text!)
+        guard authCheck else { return }
         let storyboard = UIStoryboard(name: Storyboards.mainTabBar.rawValue, bundle: nil)
         let testAuthView = storyboard.instantiateViewController(withIdentifier: ViewControllers.mainTabBar.rawValue)
         testAuthView.modalPresentationStyle = .fullScreen
