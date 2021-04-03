@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UYh-lK-mSs">
-                                <rect key="frame" x="20" y="354" width="388" height="228"/>
+                                <rect key="frame" x="20" y="319" width="388" height="298"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYf-Hk-nwG">
                                         <rect key="frame" x="0.0" y="0.0" width="388" height="24"/>
@@ -40,7 +40,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5VV-fP-fnd">
                                         <rect key="frame" x="0.0" y="124" width="388" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UB9-fh-eW8">
                                         <rect key="frame" x="0.0" y="168" width="388" height="60"/>
@@ -49,27 +49,48 @@
                                             <constraint firstAttribute="height" constant="60" id="YTc-XV-oFo"/>
                                         </constraints>
                                         <color key="tintColor" red="0.98126319259999994" green="1" blue="0.9801598587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Старт"/>
+                                        <state key="normal" title="Вход"/>
                                         <connections>
-                                            <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JgC-lv-xPS"/>
+                                            <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JgC-lv-xPS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OC8-Cz-DrI">
+                                        <rect key="frame" x="0.0" y="238" width="388" height="60"/>
+                                        <color key="backgroundColor" red="0.86373662949999996" green="0.66971492769999996" blue="0.27044984700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Ehl-Ay-KiL"/>
+                                        </constraints>
+                                        <state key="normal" title="Регистрация">
+                                            <color key="titleColor" red="0.98126319259999994" green="1" blue="0.9801598587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wX2-Rm-Fm4"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-fo-pn0">
+                                <rect key="frame" x="195.66666666666666" y="449.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.86373662949999996" green="0.66971492769999996" blue="0.27044984700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UYh-lK-mSs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2h6-mr-0gd"/>
+                            <constraint firstItem="dj1-fo-pn0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ShL-LT-sxH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UYh-lK-mSs" secondAttribute="trailing" constant="20" id="Vfs-9a-I2v"/>
                             <constraint firstItem="UYh-lK-mSs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jyV-Xq-9BO"/>
                             <constraint firstItem="UYh-lK-mSs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wsf-QD-MN8"/>
+                            <constraint firstItem="dj1-fo-pn0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="y1P-NC-o2P"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="YmS-Qp-DZn" id="ugd-ZW-rYw"/>
                         <outlet property="passwordTextField" destination="5VV-fP-fnd" id="B6K-UC-kgg"/>
-                        <outlet property="startButton" destination="UB9-fh-eW8" id="tJh-2A-osW"/>
+                        <outlet property="processActivityIndicatorView" destination="dj1-fo-pn0" id="hSG-We-bwH"/>
+                        <outlet property="signInButton" destination="UB9-fh-eW8" id="tJh-2A-osW"/>
+                        <outlet property="signUpButton" destination="OC8-Cz-DrI" id="cBa-0o-Qp6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

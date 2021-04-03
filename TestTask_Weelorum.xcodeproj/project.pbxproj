@@ -29,6 +29,7 @@
 		9E64061B26186B530075F258 /* ItemModelForBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E64061A26186B530075F258 /* ItemModelForBasket.swift */; };
 		9E64061E26186DAD0075F258 /* StorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E64061D26186DAD0075F258 /* StorageHandler.swift */; };
 		9E64062126187AA30075F258 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E64062026187AA30075F258 /* ImageExtension.swift */; };
+		9E6406622618B84C0075F258 /* AuthorizationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6406612618B84C0075F258 /* AuthorizationExtension.swift */; };
 		9ED76CB22614C31E0025BA51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB12614C31E0025BA51 /* AppDelegate.swift */; };
 		9ED76CB42614C31E0025BA51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB32614C31E0025BA51 /* SceneDelegate.swift */; };
 		9ED76CB62614C31E0025BA51 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB52614C31E0025BA51 /* AuthorizationViewController.swift */; };
@@ -64,6 +65,7 @@
 		9E64061A26186B530075F258 /* ItemModelForBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModelForBasket.swift; sourceTree = "<group>"; };
 		9E64061D26186DAD0075F258 /* StorageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageHandler.swift; sourceTree = "<group>"; };
 		9E64062026187AA30075F258 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		9E6406612618B84C0075F258 /* AuthorizationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationExtension.swift; sourceTree = "<group>"; };
 		9ED76CAE2614C31E0025BA51 /* TestTask_Weelorum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask_Weelorum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED76CB12614C31E0025BA51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED76CB32614C31E0025BA51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				9E2C881D26165CEE001339CB /* CatalogExtension.swift */,
 				9E34D6A52618634100777130 /* BasketExtension.swift */,
 				9E64062026187AA30075F258 /* ImageExtension.swift */,
+				9E6406612618B84C0075F258 /* AuthorizationExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -179,8 +182,8 @@
 		9ED76CCA2614C9D60025BA51 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9ED76CB72614C31E0025BA51 /* Authorization.storyboard */,
 				9ED76CBC2614C3200025BA51 /* LaunchScreen.storyboard */,
+				9ED76CB72614C31E0025BA51 /* Authorization.storyboard */,
 				9E3A721E2615FCBA00B184AF /* MainTabBar.storyboard */,
 				9E2C8811261651CB001339CB /* Catalog.storyboard */,
 				9E3A724726161B8500B184AF /* ItemCell.xib */,
@@ -345,6 +348,7 @@
 				9E3A72122615EC6D00B184AF /* AuthHandler.swift in Sources */,
 				9E3A724826161B8500B184AF /* ItemCell.swift in Sources */,
 				9ED76CB42614C31E0025BA51 /* SceneDelegate.swift in Sources */,
+				9E6406622618B84C0075F258 /* AuthorizationExtension.swift in Sources */,
 				9E34D6AA2618657600777130 /* ItemCellForBasket.swift in Sources */,
 				9E34D6A62618634100777130 /* BasketExtension.swift in Sources */,
 				9E64061E26186DAD0075F258 /* StorageHandler.swift in Sources */,

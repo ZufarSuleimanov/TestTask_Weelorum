@@ -12,6 +12,7 @@ import UIKit
 class CatalogViewController: UIViewController {
     
     @IBOutlet weak var itemCollectionView: UICollectionView!
+    @IBOutlet weak var sortingSegmentedControl: UISegmentedControl!
     
     var items = [Item]()
     
@@ -26,5 +27,15 @@ class CatalogViewController: UIViewController {
         self.itemCollectionView.reloadData()
     }
     
+    @IBAction func sorting(_ sender: UISegmentedControl) {
+        
+        if sortingSegmentedControl.selectedSegmentIndex == 0 {
+            items =  items.sorted{ $0.price < $1.price }
+        } else {
+            items = items.sorted{ $0.price > $1.price }
+        }
+        
+        itemCollectionView.reloadData()
+    }
 }
 
