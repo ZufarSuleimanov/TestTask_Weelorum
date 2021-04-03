@@ -14,9 +14,11 @@ class ItemCellForBasket: UITableViewCell {
     @IBOutlet weak var sumItemLabel: UILabel!
     @IBOutlet weak var quantityItemLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func setCell(object: ItemForBasket) {
+        self.imageItemImageView.getImage(urlString: object.urlImage!)
+        self.nameItemLabel.text = object.name
+        self.sumItemLabel.text = String(object.sum)
+        self.quantityItemLabel.text = String(object.quantity)
     }
     
 }
