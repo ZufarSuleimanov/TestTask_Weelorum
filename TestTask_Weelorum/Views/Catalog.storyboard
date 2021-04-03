@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Каталог-->
         <scene sceneID="7Zx-Xn-dME">
             <objects>
                 <viewController id="2eT-3j-Zuk" customClass="CatalogViewController" customModule="TestTask_Weelorum" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,10 +31,12 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JPQ-Tz-94q">
                                 <rect key="frame" x="20" y="44" width="374" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title=""/>
+                                    <segment title="Цена: по возрастанию"/>
+                                    <segment title="Цена: по убыванию"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sorting:" destination="2eT-3j-Zuk" eventType="valueChanged" id="NnN-f1-Utn"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mtu-vZ-Htl"/>
@@ -49,9 +51,10 @@
                             <constraint firstItem="Mtu-vZ-Htl" firstAttribute="trailing" secondItem="JPQ-Tz-94q" secondAttribute="trailing" constant="20" id="zMo-sQ-QJp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cq5-Dw-ek9"/>
+                    <tabBarItem key="tabBarItem" title="Каталог" image="square.grid.3x2.fill" catalog="system" id="cq5-Dw-ek9"/>
                     <connections>
                         <outlet property="itemCollectionView" destination="1KD-ni-GX6" id="Qjw-4m-1p0"/>
+                        <outlet property="sortingSegmentedControl" destination="JPQ-Tz-94q" id="CJy-DF-Kj5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4XL-7R-eio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -60,6 +63,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square.grid.3x2.fill" catalog="system" width="128" height="80"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
