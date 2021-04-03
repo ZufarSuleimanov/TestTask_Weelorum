@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LLh-rf-SnR">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Корзина-->
+        <scene sceneID="AaJ-U6-XgH">
+            <objects>
+                <viewController storyboardIdentifier="Basket" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LLh-rf-SnR" customClass="BasketViewController" customModule="TestTask_Weelorum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DgY-aq-aAZ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-Ub-z4v">
+                                <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Dkt-uq-kf2"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.86373662949999996" green="0.66971492769999996" blue="0.27044984700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <items>
+                                    <navigationItem id="Vfy-iX-llb">
+                                        <barButtonItem key="rightBarButtonItem" title="Выход" id="FRn-EY-z92">
+                                            <color key="tintColor" red="0.98126319259999994" green="1" blue="0.9801598587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="exit:" destination="LLh-rf-SnR" id="gg7-Ci-qAJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" id="EMQ-OK-ef7">
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5k3-wS-5iT">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="683"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="gDj-yZ-bME">
+                                        <rect key="frame" x="10" y="701" width="408" height="97"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUi-eN-etR">
+                                                <rect key="frame" x="0.0" y="0.0" width="408" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итоговая сумма:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmb-L3-hAl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="yrk-0z-OC2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4C-qR-a0p">
+                                                        <rect key="frame" x="160" y="0.0" width="248" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="PZ0-gS-mF9"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeZ-lO-VVM">
+                                                <rect key="frame" x="0.0" y="57" width="408" height="40"/>
+                                                <color key="backgroundColor" red="0.86373662949999996" green="0.66971492769999996" blue="0.27044984700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="hCd-H0-gGO"/>
+                                                </constraints>
+                                                <state key="normal" title="Купить">
+                                                    <color key="titleColor" red="0.98126319259999994" green="1" blue="0.9801598587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buy:" destination="LLh-rf-SnR" eventType="touchUpInside" id="KjD-KG-6Ei"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jeZ-lO-VVM" firstAttribute="leading" secondItem="gDj-yZ-bME" secondAttribute="leading" id="CgH-6A-Ge9"/>
+                                            <constraint firstAttribute="trailing" secondItem="jeZ-lO-VVM" secondAttribute="trailing" id="hF4-um-Iya"/>
+                                            <constraint firstItem="YUi-eN-etR" firstAttribute="leading" secondItem="gDj-yZ-bME" secondAttribute="leading" id="m1f-2z-sbd"/>
+                                            <constraint firstAttribute="trailing" secondItem="YUi-eN-etR" secondAttribute="trailing" id="yd8-Ie-Nhr"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5k3-wS-5iT" firstAttribute="leading" secondItem="EMQ-OK-ef7" secondAttribute="leading" id="9ZB-QT-fSY"/>
+                                    <constraint firstItem="5k3-wS-5iT" firstAttribute="top" secondItem="EMQ-OK-ef7" secondAttribute="top" id="Wap-Id-uWe"/>
+                                    <constraint firstItem="gDj-yZ-bME" firstAttribute="top" secondItem="5k3-wS-5iT" secondAttribute="bottom" constant="18" id="X0o-rW-sfm"/>
+                                    <constraint firstAttribute="bottom" secondItem="gDj-yZ-bME" secondAttribute="bottom" constant="40" id="Xoo-1r-oBe"/>
+                                    <constraint firstAttribute="trailing" secondItem="5k3-wS-5iT" secondAttribute="trailing" id="oUI-45-AjG"/>
+                                    <constraint firstItem="gDj-yZ-bME" firstAttribute="leading" secondItem="EMQ-OK-ef7" secondAttribute="leading" constant="10" id="pIN-Hc-J7h"/>
+                                    <constraint firstAttribute="trailing" secondItem="gDj-yZ-bME" secondAttribute="trailing" constant="10" id="sPu-z7-5E0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZyR-xH-YLF"/>
+                        <color key="backgroundColor" red="0.86373662949999996" green="0.66971492769999996" blue="0.27044984700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="M9h-Ub-z4v" firstAttribute="leading" secondItem="ZyR-xH-YLF" secondAttribute="leading" id="BBz-qA-QNv"/>
+                            <constraint firstItem="M9h-Ub-z4v" firstAttribute="top" secondItem="ZyR-xH-YLF" secondAttribute="top" id="WKe-1G-mns"/>
+                            <constraint firstItem="M9h-Ub-z4v" firstAttribute="trailing" secondItem="ZyR-xH-YLF" secondAttribute="trailing" id="jhE-Iv-s2l"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Корзина" image="cart.fill" catalog="system" id="Mt5-UZ-zWj"/>
+                    <connections>
+                        <outlet property="basketTableView" destination="5k3-wS-5iT" id="836-3A-4v0"/>
+                        <outlet property="totalLabel" destination="F4C-qR-a0p" id="3CA-0T-aKv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0P-ms-q2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="292.63392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
