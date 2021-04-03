@@ -8,5 +8,7 @@ target 'TestTask_Weelorum' do
   # Pods for TestTask_Weelorum
 pod 'Firebase'
 pod 'Firebase/Auth'
+pod 'Realm'
+pod 'RealmSwift'
 
 end
