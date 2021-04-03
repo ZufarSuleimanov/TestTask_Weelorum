@@ -19,7 +19,6 @@ class AddToBasketViewController: UIViewController {
     var name: String = ""
     var price = 0
     var quantity = 0
-    var currentItem: ItemForBasket!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,19 +82,8 @@ class AddToBasketViewController: UIViewController {
             sum: (price * quantity),
             quantity: quantity,
             urlImage: urlImage)
-        
-        if currentItem != nil {
             
-            try! realm.write {
-                currentItem?.quantity = newItem.quantity + quantity
-                currentItem?.sum = newItem.sum + (price * quantity)
-            }
-            
-        } else {
-            
-            StorageHandler.saveObject(newItem)
-            
-        }
+        StorageHandler.saveObject(newItem)
         
         dismiss(animated: true)
         
