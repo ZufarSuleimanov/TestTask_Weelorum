@@ -45,7 +45,7 @@ class AuthorizationViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (_) in
             self.processActivityIndicatorView.stopAnimating()
             self.processActivityIndicatorView.isHidden = true
-            let createUser = UserDefaults.standard.string(forKey: "createUser")
+            let createUser = UserDefaults.standard.string(forKey: "authUser")
             if createUser != nil {
                 let storyboard = UIStoryboard(name: Storyboards.mainTabBar.rawValue, bundle: nil)
                 let mainTabBar = storyboard.instantiateViewController(withIdentifier: ViewControllers.mainTabBar.rawValue)
