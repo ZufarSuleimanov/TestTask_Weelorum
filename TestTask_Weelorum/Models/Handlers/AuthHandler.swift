@@ -6,37 +6,29 @@
 //
 
 import UIKit
-import Foundation
 import FirebaseAuth
 
 class AuthHandler {
     
-    static var checkAuth = Bool()
-    
-    static func loginUser(email: String, password: String) -> Bool {
+    static func loginUser(email: String, password: String) {
         
         Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
-            if error == nil {
-                checkAuth = true
-            } else {
-                checkAuth = createUser(email: email, password: password)
+            DispatchQueue.global(qos: .utility).async {
+                if authResult?.user != nil {
+                    UserDefaults.standard.set(authResult?.user.email, forKey: "authUser")
+                }
             }
         }
-        
-        return checkAuth
     }
     
-    static func createUser(email: String, password: String) -> Bool {
-        
+    static func createUser(email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-            if error == nil {
-                checkAuth = true
-            } else {
-                checkAuth = false
+            DispatchQueue.global(qos: .utility).async {
+                if authResult?.user != nil {
+                    UserDefaults.standard.set(authResult?.user.email, forKey: "createUser")
+                }
             }
         }
-        
-        return checkAuth
     }
     
 }
