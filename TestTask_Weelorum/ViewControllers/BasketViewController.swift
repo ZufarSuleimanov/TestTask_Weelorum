@@ -37,11 +37,16 @@ class BasketViewController: UIViewController {
     @IBAction func exit(_ sender: UIBarButtonItem) {
         do {
             try Auth.auth().signOut()
+            dismiss(animated: true)
+            let storyboard = UIStoryboard(name: Storyboards.authorization.rawValue, bundle: nil)
+            let testAuthView = storyboard.instantiateViewController(withIdentifier: ViewControllers.authorization.rawValue)
+            testAuthView.modalPresentationStyle = .fullScreen
+            present(testAuthView, animated: true)
             
         } catch {
             print(error.localizedDescription)
         }
-        dismiss(animated: true)
+        
     }
     
     @IBAction func buy(_ sender: UIButton) {
