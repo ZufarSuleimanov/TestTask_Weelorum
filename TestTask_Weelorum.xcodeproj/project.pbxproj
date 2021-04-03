@@ -10,6 +10,9 @@
 		9E2C8812261651CB001339CB /* Catalog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C8811261651CB001339CB /* Catalog.storyboard */; };
 		9E2C8815261658D7001339CB /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C8814261658D7001339CB /* CatalogViewController.swift */; };
 		9E2C881E26165CEE001339CB /* CatalogExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C881D26165CEE001339CB /* CatalogExtension.swift */; };
+		9E34D6A62618634100777130 /* BasketExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E34D6A52618634100777130 /* BasketExtension.swift */; };
+		9E34D6AA2618657600777130 /* ItemCellForBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E34D6A82618657600777130 /* ItemCellForBasket.swift */; };
+		9E34D6AB2618657600777130 /* ItemCellForBasket.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E34D6A92618657600777130 /* ItemCellForBasket.xib */; };
 		9E3A72122615EC6D00B184AF /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A72112615EC6D00B184AF /* AuthHandler.swift */; };
 		9E3A721F2615FCBA00B184AF /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3A721E2615FCBA00B184AF /* MainTabBar.storyboard */; };
 		9E3A724826161B8500B184AF /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A724626161B8500B184AF /* ItemCell.swift */; };
@@ -21,6 +24,8 @@
 		9E4504F52617373000967304 /* CurrentUserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4504F42617373000967304 /* CurrentUserAuth.swift */; };
 		9E4505142617820D00967304 /* AddToBasket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4505132617820D00967304 /* AddToBasket.storyboard */; };
 		9E45051726178D6800967304 /* AddToBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E45051626178D6800967304 /* AddToBasketViewController.swift */; };
+		9E4505282617B5C100967304 /* Basket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4505272617B5C100967304 /* Basket.storyboard */; };
+		9E45052B2617BA3F00967304 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E45052A2617BA3F00967304 /* BasketViewController.swift */; };
 		9ED76CB22614C31E0025BA51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB12614C31E0025BA51 /* AppDelegate.swift */; };
 		9ED76CB42614C31E0025BA51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB32614C31E0025BA51 /* SceneDelegate.swift */; };
 		9ED76CB62614C31E0025BA51 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED76CB52614C31E0025BA51 /* AuthorizationViewController.swift */; };
@@ -37,6 +42,9 @@
 		9E2C8811261651CB001339CB /* Catalog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Catalog.storyboard; sourceTree = "<group>"; };
 		9E2C8814261658D7001339CB /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		9E2C881D26165CEE001339CB /* CatalogExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogExtension.swift; sourceTree = "<group>"; };
+		9E34D6A52618634100777130 /* BasketExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketExtension.swift; sourceTree = "<group>"; };
+		9E34D6A82618657600777130 /* ItemCellForBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellForBasket.swift; sourceTree = "<group>"; };
+		9E34D6A92618657600777130 /* ItemCellForBasket.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCellForBasket.xib; sourceTree = "<group>"; };
 		9E3A72112615EC6D00B184AF /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		9E3A721E2615FCBA00B184AF /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
 		9E3A724626161B8500B184AF /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
@@ -48,6 +56,8 @@
 		9E4504F42617373000967304 /* CurrentUserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserAuth.swift; sourceTree = "<group>"; };
 		9E4505132617820D00967304 /* AddToBasket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddToBasket.storyboard; sourceTree = "<group>"; };
 		9E45051626178D6800967304 /* AddToBasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketViewController.swift; sourceTree = "<group>"; };
+		9E4505272617B5C100967304 /* Basket.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Basket.storyboard; sourceTree = "<group>"; };
+		9E45052A2617BA3F00967304 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		9ED76CAE2614C31E0025BA51 /* TestTask_Weelorum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask_Weelorum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED76CB12614C31E0025BA51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED76CB32614C31E0025BA51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				9E2C881D26165CEE001339CB /* CatalogExtension.swift */,
+				9E34D6A52618634100777130 /* BasketExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -141,6 +152,8 @@
 				9E3A724626161B8500B184AF /* ItemCell.swift */,
 				9ED76CB52614C31E0025BA51 /* AuthorizationViewController.swift */,
 				9E45051626178D6800967304 /* AddToBasketViewController.swift */,
+				9E45052A2617BA3F00967304 /* BasketViewController.swift */,
+				9E34D6A82618657600777130 /* ItemCellForBasket.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -163,6 +176,8 @@
 				9E2C8811261651CB001339CB /* Catalog.storyboard */,
 				9E3A724726161B8500B184AF /* ItemCell.xib */,
 				9E4505132617820D00967304 /* AddToBasket.storyboard */,
+				9E4505272617B5C100967304 /* Basket.storyboard */,
+				9E34D6A92618657600777130 /* ItemCellForBasket.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,9 +263,11 @@
 				9E4505142617820D00967304 /* AddToBasket.storyboard in Resources */,
 				9ED76CD72614F1620025BA51 /* GoogleService-Info.plist in Resources */,
 				9ED76CBB2614C3200025BA51 /* Assets.xcassets in Resources */,
+				9E34D6AB2618657600777130 /* ItemCellForBasket.xib in Resources */,
 				9E3A725726161EF800B184AF /* items.json in Resources */,
 				9E3A724926161B8500B184AF /* ItemCell.xib in Resources */,
 				9ED76CB92614C31E0025BA51 /* Authorization.storyboard in Resources */,
+				9E4505282617B5C100967304 /* Basket.storyboard in Resources */,
 				9E3A721F2615FCBA00B184AF /* MainTabBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +323,7 @@
 			files = (
 				9E3AA7942615137E00F652BE /* ScreenObjectAndElementNames.swift in Sources */,
 				9E2C881E26165CEE001339CB /* CatalogExtension.swift in Sources */,
+				9E45052B2617BA3F00967304 /* BasketViewController.swift in Sources */,
 				9E4504F52617373000967304 /* CurrentUserAuth.swift in Sources */,
 				9E2C8815261658D7001339CB /* CatalogViewController.swift in Sources */,
 				9E3A725026161E0100B184AF /* LocalHandler.swift in Sources */,
@@ -316,6 +334,8 @@
 				9E3A72122615EC6D00B184AF /* AuthHandler.swift in Sources */,
 				9E3A724826161B8500B184AF /* ItemCell.swift in Sources */,
 				9ED76CB42614C31E0025BA51 /* SceneDelegate.swift in Sources */,
+				9E34D6AA2618657600777130 /* ItemCellForBasket.swift in Sources */,
+				9E34D6A62618634100777130 /* BasketExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
